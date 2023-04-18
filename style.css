@@ -1,0 +1,152 @@
+/* General Styling */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10vw;
+  background-color: #00a3e033;
+}
+
+/* Image Section */
+.image_section {
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  animation: loading 4s linear infinite;
+  transform: rotate(360deg);
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.label-container {
+  position: relative;
+}
+
+.umbrella_img {
+  width: 360px;
+}
+
+.company-logo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+#logo {
+  width: 70px;
+}
+
+/* Text Section */
+.header {
+  font-size: 40px;
+}
+
+.color_pallete {
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.radio {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pink {
+  border-color: #d0006f;
+  background-color: #d0006f;
+}
+
+.blue {
+  border-color: #00a3e0;
+  background-color: #00a3e0;
+}
+
+.yellow {
+  border-color: #fed141;
+  background-color: #fed141;
+}
+
+.note {
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.details {
+  margin: 10px 0;
+}
+
+.upload_button {
+  position: relative;
+  display: flex;
+  color: #fff;
+  background-color: #00a3e0;
+  padding: 10px;
+}
+
+input[type="file"] {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-text {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Script styling */
+.padding {
+  transform: scale(1.2);
+  box-shadow: 0.5px 0.5px 3px 4px rgba(255, 255, 255, 0.5) inset;
+}
+
+.no-display {
+  display: none;
+}
+
+/* Media queries */
+@media (max-width: 769px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .umbrella_img {
+    width: 240px;
+  }
+  .header {
+    font-size: 25px;
+  }
+}

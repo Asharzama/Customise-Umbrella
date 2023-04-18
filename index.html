@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Customise Umbrella</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="image_section">
+        <img src="./assets/loader_icon.svg" alt="loader" class="loader no-display" />
+        <div class="label-container">
+          <img
+            src="./assets/Blue umbrella.png"
+            alt="umbrella"
+            class="umbrella_img"
+          />
+          <div class="company-logo">
+            <img src="" alt="" id="logo" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 class="header">Custom Umbrella</h1>
+        <div class="color_pallete">
+          <div class="radio pink"></div>
+          <div class="radio blue"></div>
+          <div class="radio yellow"></div>
+        </div>
+        <h2>Customize your umbrella</h2>
+        <p class="details">Upload a logo for an instant preview.</p>
+        <p class="note">.png and .jpg files only. Max file size is 5MB</p>
+        <label class="upload_button" for="input">
+          <input type="file" accept="image/png, image/jpg" id="input" />
+          <img
+            src="./assets/upload_icon.svg"
+            alt="upload"
+            style="filter: invert(100%)"
+          />
+          <p class="button-text">upload logo</p>
+        </label>
+      </section>
+    </main>
+  </body>
+  <script src="script.js" defer></script>
+</html>
